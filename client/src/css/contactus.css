@@ -1,0 +1,142 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-wrapper {
+    border: 2px solid #e74c3c;
+    /* Add a red border around the form */
+    box-shadow: 0px 3px 6px rgba(231, 76, 60, 0.3);
+    /* Add red shadow to the form */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Contact form inside the wrapper */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* Ensure the form takes the full width of the wrapper */
+}
+
+.heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.heading span {
+    color: #e74c3c;
+}
+
+.messageHeading {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    color: #555;
+    text-align: center;
+}
+
+.input-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.input-item {
+    flex-basis: 50%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.input-item input,
+.input-item textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.input-item textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.btn {
+    width: 40%;
+    padding: 10px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #c0392b;
+}
+
+.contact-details {
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #e74c3c;
+    /* Add a red border around the contact details */
+    border-radius: 10px;
+  }
+  
+  .contact-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .contact-details p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .contact-details strong {
+    color: #666;
+  }
+  
+  /* Social media icons styles */
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: lightcoral;
+    color: #fff;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    background-color: rgb(222, 97, 97);
+  }
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .input-box label {
+        margin-bottom: 10px;
+    }
+}

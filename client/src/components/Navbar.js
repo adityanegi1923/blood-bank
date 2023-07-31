@@ -1,24 +1,32 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import styles from '../css/navbar.css'
+import '../css/navbar.css'
+import logo from './logo.png';
+import logout from './logout.png';
+
 const Navbar = () => {
   return (
+    
     <nav className="navbar-container">
       <div className="logo-container">
-        <Link to="/homepage">BLOOD BANK</Link>
+      <a href="/homepage">
+          <img src={logo} alt="Logo" className="logo" />
+        </a>
+        <a href="/homepage">BLOOD BOND</a>
       </div>
 
-      <div className="bars">
+      {/* <div className="bars">
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>
-      </div>
+      </div> */}
 
       <ul className="nav-items">
         <li className="nav-link"><Link to="/homepage">Home</Link></li>
         <li className="nav-link"><Link to="/aboutpage">About</Link></li>
-        <li className="nav-link"><Link to="/contactpage">Contact</Link></li>
-        <li className="nav-link"><button><Link to="/login">Log Out</Link></button></li>
+        <li className="nav-link"><Link to="/donatepage">Donate</Link></li>
+        <li className="nav-link"><Link to="/contactpage">Contact Us</Link></li>
+        <li className="nav-link"><button><Link to="/login"><img src={logout} alt="Log Out" className="logout" /></Link></button></li>
       </ul>
     </nav>
 

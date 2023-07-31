@@ -6,7 +6,7 @@ import img1 from '../images/registration.jpg';
 import img2 from '../images/bloodcheck.jpg';
 import img3 from '../images/donation.jpg';
 import img4 from '../images/Refreshment.jpg';
-import styles from '../css/homepage.css'
+import '../css/homepage.css'
 const Homepage = () => {
   const styles = {
     header: {
@@ -37,8 +37,8 @@ const Homepage = () => {
       <Navbar />
       <div style={styles.header} className='img-container'>
         <div className='img-container-inside'>
-          <h2>DONATE BLOOD , SAVE LIFE!</h2>
-          <h1>DONATE YOUR BLOOD AND INSPIRE OTHERS TO DONATE</h1>
+          <h2>GIVING BLOOD, SPREADING LOVE!"</h2>
+          <h1>GIVE THE GIFT OF LIFE, DONATE BLOOD AND JOIN THE CAUSE WITH US.</h1>
           <button style={styles.buttonLink}><Link style={{ color: 'white' }} to="/homepage">JOIN US!</Link></button>
         </div>
       </div>

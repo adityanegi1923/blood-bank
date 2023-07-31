@@ -5,6 +5,8 @@ import { Navigate } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import Contactpage from "./pages/Contactpage";
 import Aboutpage from "./pages/Aboutpage";
+import Donatepage from "./pages/Donatepage";
+
 function App() {
   const user= localStorage.getItem("token")
   return (
@@ -15,6 +17,7 @@ function App() {
       <Route path='/homepage' element={<Navigate replace to="/login" />} />
       <Route path='/contactpage' element={<Contactpage />} />
       <Route path='/aboutpage' element={<Aboutpage />} />
+      <Route path='/donatepage' element={<Donatepage />} />
     </Routes>
   );
 }
