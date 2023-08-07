@@ -6,6 +6,8 @@ import Homepage from "./pages/Homepage";
 import Contactpage from "./pages/Contactpage";
 import Aboutpage from "./pages/Aboutpage";
 import Donatepage from "./pages/Donatepage";
+import Candonatepage from "./pages/Candonatepage";
+import Footer from "./components/Footer";
 
 function App() {
   const user= localStorage.getItem("token")
@@ -18,6 +20,8 @@ function App() {
       <Route path='/contactpage' element={<Contactpage />} />
       <Route path='/aboutpage' element={<Aboutpage />} />
       <Route path='/donatepage' element={<Donatepage />} />
+      <Route path='/candonatepage' element={<Candonatepage />} />
+      <Route path='/footer' element={<Footer />} />
     </Routes>
   );
 }

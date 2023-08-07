@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer'
 import background from '../images/blood-donar.jpg'
 import { Link } from 'react-router-dom';
 import img1 from '../images/registration.jpg';
@@ -79,57 +80,7 @@ const Homepage = () => {
           </div>
         </div>
       </div>
-      <footer>
-
-    <div class="row">
-
-      <div class="column">
-
-        <h4>About Us</h4>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in metus euismod, faucibus metus ut, semper nibh. Aenean euismod justo eu enim dapibus suscipit.</p>
-
-      </div>
-
-      <div class="column">
-
-        <h4>Quick Links</h4>
-
-        <ul>
-
-          <li><i class="fa fa-angle-right"></i> Subscription</li>
-
-          <li><i class="fa fa-angle-right"></i> Contact us</li>
-
-         <li><i class="fa fa-angle-right"></i> Bug report</li>
-
-        </ul>
-
-      </div>
-
-      <div class="column">
-
-        <h4>Connect with Us</h4>
-
-        <ul class="social-icons">
-
-          <li><i class="fa-brands fa-facebook-f"></i></li>
-
-          <li><i class="fa-brands fa-instagram"></i></li>
-          
-          <li><i class="fa-brands fa-twitter"></i></li>
-
-            <li><i class="fa-brands fa-github"></i></li>
-
-        </ul>
-
-      </div>
-
-    </div>
-
-    <p class="copyright">© 2023 All Rights Reserved</p>
-
-  </footer>
+      <Footer/>
     </div>
   )
 }

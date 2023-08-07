@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 import '../css/contactus.css'
 import {FaFacebook, FaInstagram, FaTwitter} from 'react-icons/fa'
 
@@ -10,7 +11,7 @@ const Contactpage = () => {
       <div className="contact" id="contact">
         <h1 className="heading">CONTACT <span>US!</span></h1>
         <div className="form-wrapper">
-          <form action="#">
+          <form action="#" className="contact-form">
             <h4 className="messageHeading">Wanna share a feedback, query or suggestion? <br />Send us a message and we'll get in touch shortly!</h4>
             <div className="input-box">
               <div className="input-item">
@@ -48,6 +49,7 @@ const Contactpage = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   )
 }

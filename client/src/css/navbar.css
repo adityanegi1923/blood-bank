@@ -5,9 +5,7 @@
   justify-content: space-between;
   align-items: center;
   background: lightcoral;
-  /* Change this to your desired background color */
   color: #DAFFFB;
-  /* Change this to your desired text color */
   padding: 7px 7px;
 }
 
@@ -27,8 +25,8 @@
 }
 
 .logo-container a:hover {
-  transform: scale(1.1); /* Increase the size by 10% on hover */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a shadow on hover */
+  transform: scale(1.1); 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
 }
 
 .logo {
@@ -49,17 +47,19 @@
   margin-top: 5px;
 }
 
-.nav-link a {
+.nav-link-item {
   text-decoration: none;
   color: #fff;
+  padding: 5px 5px;
 }
 
-/* Style links in the navbar */
-.nav-link a:hover {
-  text-decoration: underline;
+.nav-link-item:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 20%;
+  color: #fff;
+  font-size: 17px;
 }
 
-/* Style the "Log Out" button */
 .nav-link button {
   border: none;
   background: none;
@@ -72,6 +72,8 @@
 }
 
 .logout {
+  width: 25px;
+  height: 25px;
   display: flex;
   align-items: center;
   background: none;
@@ -80,19 +82,14 @@
   cursor: pointer;
   font-size: 24px;
   transition: all 0.2s ease;
+  margin-top: 10px;
+  padding: 1px 1px;
 }
 
-.logout img {
-  width: 25px;
-  height: 25px;
-  margin-right: 5px;
-  transition: all 0.2s ease;
-}
-
-/* Add hover styles */
 .logout:hover {
   transform: scale(1.1); 
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
 }
 
 .logout:hover img {

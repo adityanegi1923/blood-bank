@@ -1,0 +1,75 @@
+:root {
+  --main-color: whitesmoke;
+  --heading-color: lightcoral;
+  --quote-color: rgb(150, 58, 58);
+  --text-color: #5e2525;
+}
+
+.page {
+  font-family: Arial, sans-serif;
+  background-color: var(--main-color);
+}
+
+.content-wrapper {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--main-color);
+}
+
+h1 {
+  color: var(--heading-color);
+  text-shadow: 2px 2px 4px #692828;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 30px;
+  animation: appear 4s forwards; /* Applying the appear animation */
+  opacity: 0; /* Hide the text initially */
+}
+
+@keyframes appear {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+h2 {
+  color: var(--heading-color);
+  text-shadow: 2px 2px 4px #ffffff;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: var(--text-color);
+}
+
+p {
+  color: var(--text-color);
+  line-height: 1.6;
+  text-align: justify;
+}
+
+p span{
+  color: var(--text-color);
+  font-size: 17px;
+  font-style: italic;
+}
+
+.note{
+  margin-top: 30px;
+  background-color: rgb(250, 250, 142);
+  padding: 1px 20px 1px 20px;
+  border: solid rgb(211, 211, 123);
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .content-wrapper {
+    padding: 10px;
+  }
+}

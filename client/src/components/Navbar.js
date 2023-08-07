@@ -22,10 +22,10 @@ const Navbar = () => {
       </div> */}
 
       <ul className="nav-items">
-        <li className="nav-link"><Link to="/homepage">Home</Link></li>
-        <li className="nav-link"><Link to="/aboutpage">About</Link></li>
-        <li className="nav-link"><Link to="/donatepage">Donate</Link></li>
-        <li className="nav-link"><Link to="/contactpage">Contact Us</Link></li>
+        <li className="nav-link"><Link to="/homepage" className='nav-link-item'>Home</Link></li>
+        <li className="nav-link"><Link to="/aboutpage" className='nav-link-item'>About</Link></li>
+        <li className="nav-link"><Link to="/donatepage" className='nav-link-item'>Become a Donor</Link></li>
+        <li className="nav-link"><Link to="/contactpage" className='nav-link-item'>Contact Us</Link></li>
         <li className="nav-link"><button><Link to="/login"><img src={logout} alt="Log Out" className="logout" /></Link></button></li>
       </ul>
     </nav>

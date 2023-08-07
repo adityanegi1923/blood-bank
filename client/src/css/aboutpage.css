@@ -1,0 +1,117 @@
+:root {
+    --main-color: whitesmoke;
+    --heading-color: lightcoral;
+    --quote-color: rgb(150, 58, 58);
+    --text-color: #5e2525;
+}
+
+.container {
+    background-color: var(--main-color);
+}
+
+/* Navigation bar styles */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+/* Upper content styles */
+.upper-content {
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+}
+
+.upper-content h1 {
+    color: var(--heading-color);
+    text-shadow: 2px 2px 4px #692828;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    animation: appear 5s forwards; /* Applying the appear animation */
+    opacity: 0; /* Hide the text initially */
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Lower content styles */
+.lower-content {
+    margin-top: 10px;
+    background-color: var(--main-color);
+    display: flex;
+    padding: 30px;
+}
+
+.left-about {
+    flex: 1;
+    justify-content: center;
+    align-items: baseline;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #fff;
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.right-about {
+    flex: 1;
+    text-align: center;
+    border-radius: 8px;
+    background-color: var(--main-color); /* Light red background */
+}
+
+.right-about img {
+    max-width: 80%;
+    height: 700px;
+    border-radius: 8px;
+    border: 1px solid #fff; /* Red border */
+    box-shadow: 0 0 10px #fff; 
+    transition: transform 0.3s ease-in-out; /* Adding the transition effect */
+}
+
+
+/* About text styles */
+.left-about .p-content {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.left-about h1 {
+    color: var(--heading-color); 
+    text-shadow: 2px 2px 4px #ffffff;
+    font-size: 2rem;
+}
+
+.left-about p {
+    color: #5e2525;
+    font-size: 1.1rem;
+}
+
+/* Media query for responsive layout */
+@media screen and (max-width: 768px) {
+    .lower-content {
+        flex-direction: column;
+    }
+
+    .right-about img {
+        max-width: 80%;
+        margin: 20px auto;
+    }
+}

@@ -1,3 +1,4 @@
+
 .signup_container {
 	width: 100%;
 	min-height: 100vh;
@@ -29,7 +30,8 @@
 
 .left h1 {
 	margin-top: 0;
-	color: white;
+	color: white ;
+	text-shadow: none;
 	font-size: 35px;
 	align-self: center;
 }
@@ -51,9 +53,19 @@
 	align-items: center;
 }
 
+.form_container h2 {
+	font-size: 25px;
+	margin-top: 0;
+	color: #3bb19b;
+	text-shadow: none;
+	margin-bottom: 0px;
+}
+
 .form_container h1 {
 	font-size: 40px;
 	margin-top: 0;
+	color: #3bb19b;
+	text-shadow: none;
 }
 
 .input {
