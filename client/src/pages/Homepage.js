@@ -8,6 +8,7 @@ import img2 from '../images/bloodcheck.jpg';
 import img3 from '../images/donation.jpg';
 import img4 from '../images/Refreshment.jpg';
 import '../css/homepage.css'
+import Slider from '../components/Slider';
 const Homepage = () => {
   const styles = {
     header: {
@@ -80,6 +81,7 @@ const Homepage = () => {
           </div>
         </div>
       </div>
+      <Slider />
       <Footer/>
     </div>
   )
