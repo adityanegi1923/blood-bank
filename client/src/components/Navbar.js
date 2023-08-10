@@ -1,42 +1,51 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react'
+import { Link, NavLink } from 'react-router-dom'
 import '../css/navbar.css'
-import logo from './logo.png';
-import { useSelector } from 'react-redux';
+import logo from '../components/logo.png'
+import { useState } from 'react'
+import { FaSignInAlt, FaSignOutAlt } from "react-icons/fa";
 import { logout } from '../Redux/authSlice';
-import logoo from '../components/logout.png'
-import login from '../components/login.png'
+import { useSelector } from 'react-redux'
 const Navbar = () => {
-  const isloggedin = useSelector(state=>state.auth.isLoggedIn);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const isloggedin = useSelector(state => state.auth.isLoggedIn);
   return (
-    <nav className="navbar-container">
-      <div className="logo-container">
-      <a href="/homepage">
-          <img src={logo} alt="Logo" className="logo" />
-        </a>
-        <a href="/homepage">BLOOD BOND</a>
+    <nav className='upper-nav'>
+      <Link to="/" className="title">
+        <img alt='#' src={logo} id="logo" />
+        <h1>   Blood Bond</h1>
+      </Link>
+      <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <ul className="nav-items">
-        <li className="nav-link"><Link to="/homepage" className='nav-link-item'>Home</Link></li>
-        <li className="nav-link"><Link to="/aboutpage" className='nav-link-item'>About</Link></li>
+      <ul className={menuOpen ? "open" : ""}>
+        <li>
+          <NavLink to='/'>Home</NavLink>
+        </li>
         {isloggedin && (
-          <li className="nav-link">
-            <Link to="/donatepage" className='nav-link-item'>Become a Donor</Link>
+          <li>
+            <NavLink to="/donatepage" className='nav-link-item'><b>Become a Donor</b></NavLink>
           </li>
         )}
-        <li className="nav-link"><Link to="/contactpage" className='nav-link-item'>Contact Us</Link></li>
-        {isloggedin ? <div className="logout">
-          <li className="nav-link"><button><Link to="/login" onClick={logout}><img src={logoo} alt='#' /></Link></button></li>
-        </div>  
-        :
-        <div className="login">
-          <li className="nav-link"><button><Link to="/login"><img src={login} alt='#' /></Link></button></li>
-        </div>
+        <li>
+          <NavLink to="/aboutpage"><b>About</b></NavLink>
+        </li>
+        <li>
+          <NavLink to="/contactpage"><b>Contact</b></NavLink>
+        </li>
+        {isloggedin ?
+          <li>
+            <Link to="/login" onClick={logout}><FaSignOutAlt style={{ color: 'white' }} /></Link>
+          </li>
+          :
+          <li>
+            <Link to="/login"><FaSignInAlt style={{ color: "white" }} /></Link>
+          </li>
         }
-        
       </ul>
     </nav>
-
   )
 }
 
