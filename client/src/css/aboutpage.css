@@ -1,12 +1,12 @@
 :root {
-    --main-color: whitesmoke;
+    --main-color: #eceefa;
     --heading-color: lightcoral;
     --quote-color: rgb(150, 58, 58);
     --text-color: #5e2525;
 }
 
 .container {
-    background-color: var(--main-color);
+    background-color: #eceefa;
 }
 
 /* Navigation bar styles */
@@ -22,7 +22,7 @@
 
 /* Upper content styles */
 .upper-content {
-    background-color: var(--main-color);
+    background-color: #eceefa;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,7 +35,7 @@
     text-shadow: 2px 2px 4px #692828;
     font-size: 3rem;
     margin-bottom: 10px;
-    animation: appear 5s forwards; /* Applying the appear animation */
+    animation: appear 3s forwards; /* Applying the appear animation */
     opacity: 0; /* Hide the text initially */
 }
 
@@ -51,7 +51,7 @@
 /* Lower content styles */
 .lower-content {
     margin-top: 10px;
-    background-color: var(--main-color);
+    background-color: #eceefa;
     display: flex;
     padding: 30px;
 }
@@ -72,7 +72,7 @@
     flex: 1;
     text-align: center;
     border-radius: 8px;
-    background-color: var(--main-color); /* Light red background */
+    background-color: #eceefa; /* Light red background */
 }
 
 .right-about img {

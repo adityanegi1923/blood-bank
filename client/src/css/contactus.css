@@ -47,7 +47,7 @@
   margin-bottom: 30px;
   color: var(--heading-color);
   text-shadow: 2px 2px 4px #692828;
-  animation: appear 5s forwards;
+  animation: appear 3s forwards;
   /* Applying the appear animation */
   opacity: 0;
   /* Hide the text initially */

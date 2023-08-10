@@ -5,6 +5,7 @@ import logo from './logo.png';
 import { useSelector } from 'react-redux';
 import { logout } from '../Redux/authSlice';
 import logoo from '../components/logout.png'
+import login from '../components/login.png'
 const Navbar = () => {
   const isloggedin = useSelector(state=>state.auth.isLoggedIn);
   return (
@@ -24,7 +25,14 @@ const Navbar = () => {
           </li>
         )}
         <li className="nav-link"><Link to="/contactpage" className='nav-link-item'>Contact Us</Link></li>
-        {isloggedin ? <li className="nav-link"><button><Link to="/login" onClick={logout}><img src={logoo} alt='#' /></Link></button></li> : <li className="nav-link"><button><Link to="/login">Login</Link></button></li>}
+        {isloggedin ? <div className="logout">
+          <li className="nav-link"><button><Link to="/login" onClick={logout}><img src={logoo} alt='#' /></Link></button></li>
+        </div>  
+        :
+        <div className="login">
+          <li className="nav-link"><button><Link to="/login"><img src={login} alt='#' /></Link></button></li>
+        </div>
+        }
         
       </ul>
     </nav>

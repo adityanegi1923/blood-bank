@@ -5,7 +5,7 @@ import { Navigate } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import Contactpage from "./pages/Contactpage";
 import Aboutpage from "./pages/Aboutpage";
-import Donatepage from "./pages/DonatePage"
+import Donatepage from "./pages/Donatepage";
 import Candonatepage from "./pages/Candonatepage";
 import Footer from "./components/Footer";
 function App() {

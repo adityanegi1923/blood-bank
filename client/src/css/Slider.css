@@ -75,6 +75,33 @@
 }
 
 .Slider-container h1{
-   font-size:3rem;
-   color:rgb(242, 76, 61);
+   font-size:2.8rem;
+   color:lightcoral;
+   padding-bottom: 40px;
 }
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  
+  .card-row {
+    display: grid;
+    justify-content: center;
+    width:100%
+  }
+  
+  .card-body {
+    width: 150px;
+    height: 150px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    margin: 10px; /* Add some margin for spacing between cards */
+  }

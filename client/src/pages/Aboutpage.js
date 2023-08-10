@@ -22,8 +22,6 @@ const Aboutpage = () => {
                 <br/>With a robust network of mobile blood drives and conveniently located donation centers, we make the process of giving blood easy and convenient for our donors. Each donor becomes a crucial link in the life-saving chain, making a profound impact on the lives of patients in need.
 
 
-                <br />At Blood Bond, we celebrate the unsung heroes—the donors—who generously offer their blood, time, and support, knowing that their actions can be the difference between life and death for someone else. We are inspired by the resilience and strength of those we serve and the unyielding spirit of humanity that runs through our veins, binding us together in a shared mission of healing and hope.
-
                 <br />Together, as a united force, we forge unbreakable bonds of compassion, support, and unity. Blood Bond will continue to serve as the heartbeat of our communities, nourishing the precious connection we all share, one drop at a time.</p>
             </div>
           </div>
